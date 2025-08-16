@@ -10,8 +10,7 @@ RUN apk update && apk add --no-cache \
     openssl-dev \
     git
 
-
-# Copy NodeCG bundles
+# Copy package.json
 COPY ./package.json /opt/nodecg/package.json
 
 # Copy NodeCG bundles
@@ -24,4 +23,4 @@ WORKDIR /opt/nodecg
 RUN npm install
 
 # Start NodeCG
-CMD ["npx", "nodecg", "start"]
+CMD ["npm", "start"]

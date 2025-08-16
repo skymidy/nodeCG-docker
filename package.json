@@ -1,0 +1,13 @@
+{
+  "name": "nodecg-docker",
+  "version": "1.0.0",
+  "description": "Dockerized NodeCG setup using packeged version",
+  "scripts": {
+    "start": "npx nodecg start"
+  },
+  "author": "skymidy",
+  "license": "MIT",
+  "dependencies": {
+    "nodecg": "^2.6.1"
+  }
+}
