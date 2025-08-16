@@ -13,9 +13,6 @@ RUN apk update && apk add --no-cache \
 # Copy package.json
 COPY ./package.json /opt/nodecg/package.json
 
-# Copy NodeCG bundles
-COPY ./bundles /opt/nodecg/bundles
-
 # Set working directory
 WORKDIR /opt/nodecg
 

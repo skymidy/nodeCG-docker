@@ -8,3 +8,4 @@ services:
       - './db:/opt/nodecg/db'
       - './assets:/opt/nodecg/assets'
       - './cfg:/opt/nodecg/cfg'
+      - './bundles:/opt/nodecg/bundles'
