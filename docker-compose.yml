@@ -1,0 +1,10 @@
+services:
+  nodecg:
+    image: 'rollercg:latest'
+    ports:
+      - '9090:9090'
+    volumes:
+      - './logs:/opt/nodecg/logs'
+      - './db:/opt/nodecg/db'
+      - './assets:/opt/nodecg/assets'
+      - './cfg:/opt/nodecg/cfg'
