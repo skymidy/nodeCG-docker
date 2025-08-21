@@ -1,5 +1,8 @@
 services:
   nodecg:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: 'rollercg:latest'
     ports:
       - '9090:9090'
